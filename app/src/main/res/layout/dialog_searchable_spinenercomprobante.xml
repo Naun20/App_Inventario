@@ -1,0 +1,54 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccione Comprobante"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:id="@+id/ivIcono"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/reporte"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:contentDescription="Icono" />
+
+    <EditText
+        android:id="@+id/editex_comprobante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Buscar Comprobante..."
+        android:padding="12dp"
+        android:singleLine="true"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/tvTitulo"
+        android:background="@drawable/custom_spinner_background" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#0000FF"
+        android:layout_below="@+id/editex_comprobante"
+        android:layout_marginTop="8dp" />
+
+    <ListView
+        android:id="@+id/lista_comprobante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editex_comprobante"
+        android:layout_marginTop="16dp"
+        android:divider="@android:color/holo_blue_dark"
+        android:dividerHeight="1dp" />
+</RelativeLayout>

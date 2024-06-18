@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "208276408552",
+    "project_id": "app-inventario-d0b0e",
+    "storage_bucket": "app-inventario-d0b0e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208276408552:android:ff8dcd46a33511ea96e15d",
+        "android_client_info": {
+          "package_name": "com.ejercicio2.appinventario"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "208276408552-arpn1fcjtmvuivjtsv6gfmfqj6hdk367.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIp8eMk5t5EvqDyv8MkAU9mKpV9BuiWPs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "208276408552-arpn1fcjtmvuivjtsv6gfmfqj6hdk367.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

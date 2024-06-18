@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">App Inventario</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Cerrar</string>
+
+    <string name="menu_home">Inicio</string>
+    <string name="menu_gallery">Sistema</string>
+    <string name="menu_slideshow">Ventas</string>
+    <string name="menu_ventas">Compras</string>
+
+    <!-- registro cliente -->
+    <string name="txtNomCliente">Nombre del Cliente</string>
+    <string name="txtDNICliente">DNI</string>
+    <string name="txtCliemailente">Email</string>
+    <string name="txtDireccionCliente">Direccion</string>
+    <string name="txtGeneroCliente">Genero</string>
+    <string name="txtTelefCliente">Telefono</string>
+    <string name="txtTipoCliente">Tipo de Cliente</string>
+    <string name="txtFechaCreacCliente">Fecha Creacion del Cliente</string>
+    <string name="txtEdadCliente">Edad</string>
+    <string name="spinnerGenero">Genero</string>
+
+    <!-- registro proveedor -->
+    <string name="txtNomProveedor">Nombre del Proveedor</string>
+    <string name="spinnerdireProveedor">Departamento</string>
+    <string name="txtDireccion">Direccion </string>
+    <string name="txtTelefonoProveedor">Telefono </string>
+    <string name="txtEmail">Email </string>
+
+
+    <string name="txtdescrinegocio">Descripcion</string>
+    <string name="txtnumero">N. Documento</string>
+    <string name="txttelefono">N. Telefono</string>
+    <string name="txtemailnegocio">Email Negocio</string>
+    <string name="txtdireccionegocio">Direccion</string>
+    <string name="txtmensaje">Mensaje</string>
+
+    <string name="txtxtipo">Descuento</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="default_web_client_id">208276408552-arpn1fcjtmvuivjtsv6gfmfqj6hdk367.apps.googleusercontent.com</string>
+</resources>

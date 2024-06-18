@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondocavecera"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".RegistroActivity">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/custom_editext"
+        app:cardCornerRadius="30dp"
+        app:cardMaxElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="24dp">
+
+
+            <TextView
+                android:id="@+id/lblRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrar Usuario"
+                android:textAlignment="center"
+                android:textColor="@color/celeste"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtNombreUsu"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/custom_editext"
+                android:drawableLeft="@drawable/baseline_account_circle_24"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:paddingStart="15dp"
+                android:hint="Nombre y Apellido"
+                android:drawableTint="@color/celeste"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/cardview_dark_background" />
+
+            <EditText
+                android:id="@+id/txtEmailUsu"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_editext"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/celeste"
+                android:ems="10"
+                android:paddingStart="15dp"
+                android:hint="Email"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/cardview_dark_background" />
+
+            <EditText
+                android:id="@+id/txtTelefonoUsu"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_editext"
+                android:drawableLeft="@drawable/baseline_add_call_24"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:drawableTint="@color/celeste"
+                android:paddingStart="15dp"
+                android:hint="Telefono"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textColorHint="@color/cardview_dark_background" />
+
+
+            <EditText
+                android:id="@+id/txtUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_editext"
+                android:drawableLeft="@drawable/baseline_assignment_ind_24"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:drawableTint="@color/celeste"
+                android:paddingStart="15dp"
+                android:hint="Usuario"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/cardview_dark_background" />
+
+            <EditText
+                android:id="@+id/txtContrasena"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_editext"
+                android:drawableLeft="@drawable/baseline_admin_panel_settings_24"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:drawableTint="@color/celeste"
+                android:paddingStart="15dp"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textColorHint="@color/cardview_dark_background" />
+
+            <Spinner
+                android:id="@+id/spinnerTipoUser"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_spinner_background" />
+
+
+            <Button
+                android:id="@+id/btn_Registrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/celeste"
+                android:text="Registrar Usuario"
+                android:textSize="20sp"
+                app:cornerRadius="20dp" />
+
+            <TextView
+
+                android:id="@+id/lblVolver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Ya Tengo una Cuenta!"
+                android:textAlignment="center"
+                android:textColor="@color/celeste"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/green"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppInventario"
+        tools:targetApi="31">
+        <activity
+            android:name=".AjusteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClientesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReportesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReporteComprasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReporteVentasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateTipoClienteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AgregarTipoClienteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateNegocioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NegocioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateVentaActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".CreateCompraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateProductoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AgregarProductoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateCategoriaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AgregarCategoriaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreatePeoveedorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AgregarProveedorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateUsuarioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AgregarUsuarioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateClienteaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AgregarClienteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuPrincipal"
+            android:exported="false"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/Theme.AppInventario.NoActionBar" />
+        <activity
+            android:name=".RestablecerContrasenaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PerfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateClienteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

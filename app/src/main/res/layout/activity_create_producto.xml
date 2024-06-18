@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fondocavecera"
+    android:fitsSystemWindows="true"
+    android:windowSoftInputMode="adjustResize"
+    tools:context=".CreateProductoActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/tvproducto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registro de Producto"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:id="@+id/images_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="visible"
+                android:layout_marginTop="16dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    app:cardCornerRadius="70dp">
+
+                    <ImageView
+                        android:id="@+id/usuario_photoproduc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/producto"
+                        android:scaleType="centerCrop"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_photoproduc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/celeste"
+                        android:drawableLeft="@drawable/baseline_edit_24"
+                        android:text="Foto" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/btn_eliminarphotoproduc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#F82828"
+                        android:drawableLeft="@drawable/baseline_delete_24"
+                        android:text="BORRAR" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/NomProduc"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_editext"
+                android:drawableLeft="@drawable/baseline_bookmarks_24"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:paddingStart="15dp"
+                android:hint="Nombre del Producto"
+                android:drawableTint="@color/celeste"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/cardview_dark_background" />
+
+            <EditText
+                android:id="@+id/CodigoBarra"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_editext"
+                android:drawableLeft="@drawable/baseline_apps_outage_24"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:paddingStart="15dp"
+                android:hint="Codigo de Barra"
+                android:drawableTint="@color/celeste"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textColorHint="@color/cardview_dark_background" />
+
+            <Spinner
+                android:id="@+id/spinnerCategoria"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_spinner_background" />
+
+            <EditText
+                android:id="@+id/Descripcionproducto"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_editext"
+                android:drawableLeft="@drawable/baseline_dashboard_customize_24"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:paddingStart="15dp"
+                android:hint="Descripcion del Producto"
+                android:drawableTint="@color/celeste"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/cardview_dark_background" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Título del Spinner -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="8dp"
+                        android:text="Descripcion General del Producto"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/Marca"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/custom_editext"
+                        android:drawableLeft="@drawable/baseline_bookmarks_24"
+                        android:drawablePadding="8dp"
+                        android:ems="10"
+                        android:paddingStart="15dp"
+                        android:hint="Marca"
+                        android:drawableTint="@color/celeste"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/cardview_dark_background" />
+
+                    <!-- Resto de tus vistas y elementos -->
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <!-- Botones de suma y resta con EditText -->
+                        <ImageButton
+                            android:id="@+id/buttonMinus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/abajo"
+                            android:background="@null"
+                            android:padding="10dp"
+                            android:contentDescription="Menos" />
+
+                        <EditText
+                            android:id="@+id/Stock"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@id/buttonMinus"
+                            android:layout_toStartOf="@+id/buttonPlus"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/custom_editext"
+                            android:drawableLeft="@drawable/baseline_apps_outage_24"
+                            android:drawablePadding="8dp"
+                            android:drawableTint="@color/celeste"
+                            android:ems="10"
+                            android:paddingStart="15dp"
+                            android:hint="Stock"
+                            android:inputType="number"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/cardview_dark_background" />
+
+                        <ImageButton
+                            android:id="@+id/buttonPlus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/subir_24"
+                            android:background="@null"
+                            android:padding="8dp"
+                            android:contentDescription="Más" />
+                    </RelativeLayout>
+
+                    <!-- Otros elementos de tu interfaz -->
+
+                    <EditText
+                        android:id="@+id/precio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/custom_editext"
+                        android:drawableLeft="@drawable/baseline_analytics_24"
+                        android:drawablePadding="8dp"
+                        android:drawableTint="@color/celeste"
+                        android:ems="10"
+                        android:paddingStart="15dp"
+                        android:hint="Precio"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/cardview_dark_background" />
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- CheckBox para Estado -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:background="#FFFFFF">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Estado"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:paddingBottom="8dp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxActivo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Activo"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:checked="true"
+                        android:buttonTint="@color/celeste" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxNoActivo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No Activo"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:buttonTint="@color/celeste" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- EditText para la fecha de creación y vencimiento -->
+            <EditText
+                android:id="@+id/FechaCreaproducto"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_editext"
+                android:drawableLeft="@drawable/baseline_date_range_24"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:drawableTint="@color/celeste"
+                android:paddingStart="15dp"
+                android:hint="Fecha de Creación"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/cardview_dark_background" />
+
+            <EditText
+                android:id="@+id/FechaVencimiento"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_editext"
+                android:drawableLeft="@drawable/baseline_date_range_24"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:drawableTint="@color/celeste"
+                android:paddingStart="15dp"
+                android:hint="Fecha de Vencimiento"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/cardview_dark_background" />
+
+            <!-- Botón de agregar -->
+            <Button
+                android:id="@+id/btn_addProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btn_4"
+                android:text="Agregar" />
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+            <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

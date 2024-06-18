@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/CustomToast6"
+    android:orientation="horizontal"
+    android:background="#DA0359"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:gravity="center|center_horizontal"
+    android:padding="15dp">
+
+    <ImageView
+        android:layout_width="31dp"
+        android:layout_height="32dp"
+        app:srcCompat="@drawable/advertencia" />
+
+    <TextView
+        android:id="@+id/txtMensajeToast1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily=""
+        android:textStyle="bold"
+        android:paddingStart="10dp"
+        android:text=
+            "¡Por favor, complete todos los campos.!"
+        android:textColor="#fff"/>
+
+</LinearLayout>

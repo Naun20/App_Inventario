@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/fondocavecera"
+    android:layout_height="match_parent"
+
+    tools:context=".CreateCategoriaActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvcategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Registro de Categoria"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:id="@+id/images_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                app:cardCornerRadius="70dp">
+
+                <ImageView
+                    android:id="@+id/usuario_photoCateg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/caja"
+                    android:scaleType="centerCrop"/>
+
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_photoCateg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/celeste"
+                    android:drawableLeft="@drawable/baseline_edit_24"
+                    android:text="Foto" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btn_eliminarphotoCateg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#F82828"
+                    android:drawableLeft="@drawable/baseline_delete_24"
+                    android:text="BORRAR" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/NomCateg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/custom_editext"
+            android:drawableLeft="@drawable/baseline_dashboard_customize_24"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:paddingStart="15dp"
+            android:hint="Nombre de la Categoria"
+            android:drawableTint="@color/celeste"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/cardview_dark_background" />
+        <EditText
+            android:id="@+id/DescripCateg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_editext"
+            android:drawableLeft="@drawable/baseline_edit_24"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/celeste"
+            android:ems="10"
+            android:paddingStart="15dp"
+            android:hint="Descripción de la Categoría"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/cardview_dark_background" />
+
+
+        <EditText
+            android:id="@+id/FechaCreaCateg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_editext"
+            android:drawableLeft="@drawable/baseline_date_range_24"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:drawableTint="@color/celeste"
+            android:paddingStart="15dp"
+            android:hint="Fecha de Creación"
+            android:inputType="none"
+            android:textColor="@color/black"
+            android:textColorHint="@color/cardview_dark_background" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:layout_marginTop="20dp">
+
+            <!-- Título -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estado"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <!-- RadioGroup con RadioButtons -->
+            <RadioGroup
+                android:id="@+id/radioGroupEstado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- RadioButton "Activo" -->
+                <RadioButton
+                    android:id="@+id/radioButtonActivo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Activo"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:padding="8dp"
+                    android:buttonTint="@color/celeste"
+                    android:checked="true" />
+
+                <!-- RadioButton "No Activo" -->
+                <RadioButton
+                    android:id="@+id/radioButtonNoActivo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No Activo"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:padding="8dp"
+                    android:buttonTint="@color/celeste" />
+
+            </RadioGroup>
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/btn_addCategoria"
+            android:background="@drawable/btn_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agregar" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
